@@ -6,7 +6,7 @@ Clone this repo to your computer. Connect the Basic to your computer. Update the
 
 To use in your own project, copy `basic.py` into your project folder and import `Basic` into your file.
 
-- `Basic.py`  - a class representing the Basic device. 
+- `basic.py`  - a class representing the Basic device. 
 - `example.py` - a script demonstrating how to use the Basic class
 
 # Bugs
