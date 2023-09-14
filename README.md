@@ -9,6 +9,9 @@ To use in your own project, copy `basic.py` into your project folder and import 
 - `basic.py`  - a class representing the Basic device. 
 - `example.py` - a script demonstrating how to use the Basic class
 
+# Packages
+- [pyserial](https://pyserial.readthedocs.io/en/latest/) - for communicating with the Basic.
+
 # Bugs
 If you've discovered a bug, please open an issue. Write what is your device and operating system and what version of 
 Python you're using. Please add your code.
