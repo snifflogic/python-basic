@@ -18,7 +18,7 @@ class Basic:
             given is indeed the correct port and that the LED on the Basic is ON.
         """
         try:
-            self.ser = serial.Serial('COM3')
+            self.ser = serial.Serial(port)
         except:
             raise IOError("Could not connect to given port")
 
