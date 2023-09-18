@@ -14,7 +14,7 @@ except ImportError as e:
 def main():
     #parse command line arguments
     parser = argparse.ArgumentParser(description='Simple example demonstrating how to read values from the Basic,and the usage of the Basic functions')
-    parser.add_argument("-portName",help="serial port name, default 'COM3'",default="COM3")
+    parser.add_argument("portName",help="serial port name")
     parser.add_argument("-numPoints",help="number of points, default 1000 (~5 seconds)",default=1000,type=int)
     args = parser.parse_args()
 

@@ -10,10 +10,10 @@ Install the module using `pip`
 pip install git+https://github.com/snifflogic/python-basic
 ```
 
-To run the example, run
+To run the example on the Basic connected at `COM3`, run
 
 ```bash
-python -m snifflogic_basic.example
+python -m snifflogic_basic.example COM3
 ```
 
 To use in your own project,
@@ -22,19 +22,20 @@ To use in your own project,
 from snifflogic_basic import *
 ```
 
-And then you can use `Basic` as shown in `example.py`
+And then you can use `Basic` as shown in [`example.py`](https://github.com/snifflogic/python-basic/blob/main/src/snifflogic_basic/example.py).
 
 ## Example script
 
-The example is in `example.py`. It will connect to the given `portName` (default is `COM3`) and will show `numPoint` datapoints (default 1000).
+The example is in `example.py`. It will connect to the given `portName` and will show `-numPoint` datapoints (default 1000).
 
-![Alt text](image.png)
-
+```bash
+usage: example.py [-h] [-numPoints NUMPOINTS] portName
+```
 
 ## Files
 
-- `basic.py` - a class representing the Basic device.
-- `example.py` - a script demonstrating how to use the Basic class. You can use from command line as follows:
+- [`basic.py`](https://github.com/snifflogic/python-basic/blob/main/src/snifflogic_basic/basic.py) - a class representing the Basic device.
+- [`example.py`](https://github.com/snifflogic/python-basic/blob/main/src/snifflogic_basic/example.py) - a script demonstrating how to use the Basic class. You can use from command line as follows:
 
 ## Class APIs
 
