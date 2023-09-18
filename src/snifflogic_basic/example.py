@@ -4,7 +4,7 @@
 from sys import exit
 import time
 import argparse
-from snifflogic.basic import Basic
+from . import Basic
 # check if rich is installed
 try:
     from rich import print

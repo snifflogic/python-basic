@@ -1,27 +1,47 @@
-# python-basic
+# python-basic (snifflogic_basic package)
 
 Python SDK for communicating with the Sniff Controller Basic of Sniff Logic
 
 # Usage
 
-Clone this repo to your computer. Connect the Basic to your computer. Update the `port` value in `example.py` and run it. It will show in the terminal 1000 datapoints.
+Install the module using `pip`
 
-To use in your own project, copy `basic.py` into your project folder and import `Basic` into your file.
+```bash
+pip install git+https://github.com/snifflogic/python-basic
+```
+
+To run the example, run
+
+```bash
+python -m snifflogic_basic.example
+```
+
+To use in your own project,
+
+```python
+from snifflogic_basic import *
+```
+
+And then you can use `Basic` as shown in `example.py`
+
+## Example script
+
+The example is in `example.py`. It will connect to the given `portName` (default is `COM3`) and will show `numPoint` datapoints (default 1000).
+![Alt text](image.png)
+
+# Files
 
 - `basic.py` - a class representing the Basic device.
 - `example.py` - a script demonstrating how to use the Basic class. You can use from command line as follows:
-
-![Alt text](image.png)
 
 # Packages
 
 - [pyserial](https://pyserial.readthedocs.io/en/latest/) - for communicating with the Basic.
 
-# Bugs
+## Bugs
 
-If you've discovered a bug, please open an issue. Write what is your device and operating system and what version of
-Python you're using. Please add your code.
+If you've encountered a bug, please [open an issue](https://github.com/snifflogic/python-basic/issues). Include details about your device, operating system and Python version. Don't forget to attach your code.
 
-# Contribute
+## Contribute
 
-Done something cool that will help others? Please feel free to submit a pull request.
+Have you implemented something useful that could benefit others? Don't hesitate to submit a pull request.
